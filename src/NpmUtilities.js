@@ -19,7 +19,7 @@ export default class NpmUtilities {
 
     const opts = {
       cwd: directory,
-      stdio: ["ignore", "pipe", "pipe"],
+      stdio: "inherit",
     };
 
     if (registry) {
